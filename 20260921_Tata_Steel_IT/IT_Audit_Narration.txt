@@ -1,0 +1,341 @@
+Recommended narration
+Slides 1–4: Establish the audit question
+Slide 1: AI Governance for IT Audit
+
+“Good afternoon. This session is about a practical change in the scope of IT audit.
+
+AI is no longer confined to experiments run by data science teams. It is increasingly embedded in operating decisions, employee workflows, safety processes and enterprise platforms. That creates two distinct questions for an audit function.
+
+The first is how we audit the AI systems being deployed across the organisation. The second is how auditors themselves can use AI without weakening professional judgement, confidentiality or accountability.
+
+We will deal with both. Then we will bring them together through a governance model that converts AI from an interesting technology topic into a manageable assurance subject.”
+
+Slide 2: Agenda
+
+“There are three main parts to the session.
+
+First, we will look at how AI changes the audit programme itself: ownership, authorised scope, performance, drift, escalation and auditability.
+
+Second, we will examine where AI can help auditors, using a practical example that separates a plausible first answer from an answer strong enough to support audit work.
+
+Third, we will look at the governance structure: who owns the risk, what the three lines are responsible for, how geography changes the regulatory position, and what this audit function could begin doing over the next ninety days.
+
+The objective is not to cover every AI topic. It is to leave with a usable way of asking better audit questions.”
+
+Slide 3: The 680+ footprint
+
+“Let us begin with Tata Steel rather than with a generic history of AI.
+
+Publicly reported figures describe more than 680 AI applications across the India operations, developed over roughly eight years. Kalinganagar was also recognised as a World Economic Forum Global Lighthouse for the use of advanced analytics and AI in manufacturing.
+
+That tells us something important about maturity. The organisation is well past the point where the primary question is whether AI has value. The more relevant question for this room is whether assurance coverage has expanded at the same speed as adoption.
+
+When the technology footprint becomes this extensive, AI governance is no longer only a central policy question. It becomes an inventory, ownership, control and continuous-assurance question.”
+
+Slide 4: Three questions
+
+“For each live AI system, I would begin with three questions.
+
+Who is accountable for it?
+
+What is it allowed to decide or do?
+
+How would we know if its behaviour, performance or effective authority changed?
+
+These questions sound simple, but together they expose a large part of the control environment. The first sits with ownership. The second sits with authorised use. The third sits with monitoring, change control and escalation.
+
+If these cannot be answered for a live system, we already have an assurance gap before we inspect the model itself.”
+
+Slides 5–17: Auditing AI systems
+Slide 5: Thread A
+
+“Let us now turn those questions into an audit approach.
+
+The central point in this section is that an AI audit cannot end with reviewing training data or model accuracy. Those areas matter, but many serious failures occur after the model has been built, when it is connected to a workflow, given authority and expected to operate over time.”
+
+Slide 6: Four things called AI
+
+“One reason AI audit discussions become confused is that very different technologies are placed under the same label.
+
+RPA follows a predetermined script. Predictive machine learning produces a score, class or forecast. Generative AI creates material such as text, code or images. Agentic AI works towards an objective by selecting steps or tools.
+
+These systems do not create the same risk. Consequently, they should not receive the same audit programme.
+
+For RPA, deviation from the script is usually a defect. For predictive models, we examine data, thresholds and drift. For generative AI, we examine the conditions under which an output may be relied upon. For an agent, we examine authority, escalation and the record of what it did.
+
+The first question in an AI audit should therefore be: what kind of system are we actually looking at?”
+
+Slide 7: Scope creep
+
+“Consider a purchase-order approval agent introduced with a limited threshold.
+
+Over time, the threshold is increased to handle more transactions. An exception is added for urgent purchases. Another adjustment is made because a business team complains about delays. Each change looks reasonable in isolation.
+
+Six months later, the system is exercising materially more authority than was originally approved, but there was no single decision at which someone consciously authorised that outcome.
+
+That is a characteristic agentic risk. Authority can expand through configuration and operational convenience rather than through one visible project decision.
+
+The audit questions are therefore direct: who authorised the current scope, where is that scope documented, and what mechanism exists to override or stop the agent?”
+
+Slide 8: A disciplined sequence
+
+“This sequence is useful because it begins with the business outcome rather than with the tool.
+
+First, what outcome is worth pursuing? Second, which decision needs to improve? Third, where does that decision sit in the operating workflow, and who acts upon it? Only then do we ask whether AI is the appropriate mechanism.
+
+The order matters. If we begin with an impressive model or demonstration, we often end up searching for somewhere to deploy it. If we begin with the outcome and the decision, AI has to earn its place.
+
+Public accounts of the Kalinganagar optimisation initiatives report significant operational benefits. The audit lesson is not simply that the models produced value. It is that the use case was tied to a concrete operating outcome and workflow.”
+
+Slide 9: Two-layer audit programme
+
+“I would divide the AI audit programme into two layers.
+
+The first is the data and model layer: data quality, lineage, bias, architecture, explainability, performance thresholds and drift.
+
+The second is the deployment and accountability layer: ownership, permitted use, human intervention, incident response, escalation and ongoing monitoring.
+
+The second layer is sometimes underdeveloped because it looks less technical. Yet it is often where the actual operating risk resides.
+
+A model can be technically sound and still be deployed into the wrong workflow, assigned excessive authority, monitored against no baseline or left without a person authorised to intervene.”
+
+Slide 10: Accountability
+
+“This is what accountability often looks like after a failure.
+
+The vendor says it supplied the model. The data team says it trained it. IT says it only hosts the service. The business says it relied on recommendations provided by specialists. A model owner may exist in a register, but without authority over deployment, budget or operating decisions.
+
+Everyone participated, yet no one owns the full outcome.
+
+Naming a model owner is therefore not enough. Audit should examine whether that person has a defined mandate, access to performance information, authority to require remediation and a clear escalation route.”
+
+Slide 11: Explainability after failure
+
+“The important issue in the Apple Card case is not an abstract debate about whether every model must be explainable in mathematical detail.
+
+The practical audit question is whether the organisation can reconstruct and defend a consequential decision after the event.
+
+Can it show which data was used? Can it identify the applicable model and version? Can it explain the principal factors behind the outcome? Can it demonstrate that the decision complied with policy?
+
+If a system influences credit, safety, employment, supplier access or another consequential outcome, ‘the algorithm produced it’ is not a defensible control position.”
+
+Slide 12: Three forms of drift
+
+“AI systems can deteriorate without any software failure.
+
+Data drift occurs when the population being processed changes. Concept drift occurs when the relationship between inputs and outcomes changes. Model decay is the broader decline in useful performance over time.
+
+This creates a simple audit test: what baseline was approved at deployment, which measures are monitored against it, what degree of deviation triggers action, and who decides whether the system may remain in service?
+
+Without an initial baseline, later monitoring has no reliable reference point.”
+
+Slide 13: Evaluation containment failure
+
+“This case is valuable because it challenges a common assumption: that an evaluation environment is safe merely because it has been described as a sandbox.
+
+Containment must be enforced technically. A model or agent should not inherit credentials, repository access, network reach or write permissions simply because those resources happen to be available in its environment.
+
+For audit, the important question is not whether the developers intended a boundary. It is whether the identity, access and infrastructure controls actually enforced that boundary.
+
+When we audit an agentic system, we should treat its tool access in the same way we would treat any privileged identity.”
+
+Slide 14: Five control failures
+
+“This sequence converts the case into an audit lens.
+
+Was the system given an impossible objective? Was it permitted to report that the task could not be completed? Did it circumvent a control to optimise for success? Was that behaviour visible in monitoring? Once discovered, was the system isolated and independently reassessed?
+
+The final question is especially important. Patching the specific route used by a system does not prove that the broader behaviour has been addressed.
+
+Audit should look for a defined protocol covering containment, preservation of evidence, root-cause analysis, checkpoint or model disposition, retesting and approval to resume.”
+
+Slide 15: Bring it back to Tata Steel
+
+“Now bring the discussion back to Tata Steel.
+
+Public announcements describe hundreds of specialised agents, the Zen AI platform, safety-related computer-vision applications and an HR assistant handling a substantial proportion of service requests.
+
+Those figures demonstrate pace and ambition. For audit, however, the published governance claim is the beginning of the inquiry, not the evidence required to close it.
+
+What would you want to inspect before signing off? An inventory, named ownership, approved scope, model and prompt versions, access rights, exception records, output monitoring, incident history and a complete activity trail would all be relevant.”
+
+Slide 16: Three questions for agents
+
+“For any agentic deployment, start here.
+
+What actions is the agent authorised to take, and where is that authority documented?
+
+Which conditions require the agent to stop or escalate?
+
+Can the organisation reconstruct every material action, tool call and decision made by the agent?
+
+The shift from automation to agency is important. With RPA, the test is whether the system followed its script. With an agent, the path may vary, so the test becomes whether its reasoning and actions remained inside authorised boundaries.”
+
+Slide 17: Shadow AI
+
+“The inventory will never be complete if it depends only on people declaring what they use.
+
+Some shadow AI comes from personal accounts or free tools. Some comes through browser extensions and meeting assistants. A less visible form occurs when an existing software provider enables an AI feature inside a product that has already been contracted and approved.
+
+In that situation, nothing new may appear in procurement data, but the organisation’s information flows and AI exposure have changed.
+
+A credible inventory should therefore combine questionnaires with evidence from identity systems, expenses, network activity, SaaS configurations, data-loss-prevention tools and vendor release notices.”
+
+Slides 18–21: Guided cases
+Slide 18: Set up the discussion
+
+“We have looked at several ways AI systems can fail. I now want to test where our audit instincts go first.
+
+There are two cases. For each one, the question is not simply whether you can identify a control. It is whether you identify the layer in which the failure occurred.
+
+Were the data and model defective, or did the problem sit in deployment, ownership, review or authority?”
+
+Slide 19: Deloitte Australia case
+
+“This case should not be treated as a story about a competitor. It is relevant because the same professional standard applies to every advisory and audit firm, including us.
+
+A report was issued containing fabricated citations and sources. The intuitive answer is that every citation should have been verified before release. That is correct, but it is not complete.
+
+There are three control questions.
+
+First, was the factual content independently verified against primary sources?
+
+Second, was provenance recorded so the firm could identify which passages had been produced or materially altered using AI?
+
+Third, was the permitted use of AI in client deliverables defined at all?
+
+If provenance is missing, remediation becomes much larger. Once one section is shown to be unreliable, the organisation may need to reperform the entire document because it cannot isolate the affected content.”
+
+Slide 20: Knight Capital
+
+“This case predates generative AI, which is precisely why it belongs here. The underlying problem is automation operating at a speed the control environment could not match.
+
+Alerts were generated, but they entered a human workflow while losses accumulated at machine speed.
+
+So detection existed. What was missing was an effective route from detection to intervention.
+
+There was no sufficiently rapid stop mechanism, and there was no clear pre-authorised person able to invoke one.
+
+The broader control question for an AI or automated decision system is therefore: who can stop it, through what mechanism, and within what period after an abnormal condition begins?”
+
+Slide 21: Debrief
+
+“The instinct in a technology audit is often to examine the model because the model feels new.
+
+Yet neither of these cases would have been solved through model testing.
+
+The failures concerned verification, provenance, change control, intervention and authority. These are familiar control disciplines applied to systems operating with new speed, variability and reach.
+
+The lesson is not that model risk is unimportant. It is that model risk is only one part of AI assurance, and an audit concentrated there can miss the circumstances most likely to convert a technical problem into an operating loss.”
+
+Slides 22–25: AI for auditors
+Slide 22: Thread B
+
+“We have discussed how auditors should examine AI. Let us now reverse the question.
+
+Where can auditors use AI productively, and where should professional responsibility remain non-delegable?
+
+The answer is not to prohibit the technology, nor is it to accept whatever it produces. The answer is to place it inside a disciplined review process.”
+
+Slide 23: The 4C frame
+
+“The process is Create, Challenge, Compare and Conclude.
+
+Use AI to create a first draft or an initial analysis. Then challenge it deliberately, preferably with a second prompt that looks for weaknesses, missing evidence and alternative explanations.
+
+Where the stakes justify it, compare results across methods, tools or source data.
+
+Then a human auditor concludes. The conclusion, rating and professional judgement remain with the auditor.
+
+This is a useful operating distinction: AI can accelerate the work, but it does not inherit accountability for the work.”
+
+Slide 24: Live demonstration
+
+“The dataset in this demonstration is synthetic. It contains no real supplier, bank or transaction information.
+
+In the first pass, we will ask Copilot to review the population and identify potential red flags. That is close to how many users interact with these tools: they ask a broad question and accept a plausible-looking answer.
+
+The second pass changes the task. We ask the model to behave like a sceptical senior audit manager and distinguish a genuine anomaly from something that is merely uncommon.
+
+Twenty of the sixty-three payments occur on weekends. In a continuous manufacturing environment, weekend activity alone is weak evidence. Only five of those twenty also carry a second independent indicator.
+
+The lesson is not whether Copilot gets the exact answer I expect today. The lesson is that a first pass can surface candidates, but the challenge pass forces the analysis towards corroboration. Frequency alone is not risk. Context and converging indicators are what make an exception worth investigating.”
+
+Slide 25: Where the line sits
+
+“AI is well suited to first drafts of scopes, checklists, risk-control matrices and policy summaries. It can help compare an SOP with evidence of actual practice and identify areas for further examination.
+
+It should not independently determine the audit conclusion, the rating or the interpretation of a regulatory requirement.
+
+The information boundary matters as well. An approved enterprise tool does not automatically mean every category of information is approved for use. Board material, investigation data, privileged advice and content restricted by an NDA require their own handling decision.
+
+A useful rule for the audit team is: AI may propose; the auditor must verify, decide and own.”
+
+Slides 26–31: Governance and close
+Slide 26: Thread C
+
+“We now have the two sides of the problem.
+
+The organisation needs confidence in the AI systems it operates. The audit function also needs rules for its own use of AI.
+
+Both require a governance structure that answers five basic questions: why, how, who, what and where.”
+
+Slide 27: Five questions, one stack
+
+“Why gives us direction: principles, policy, risk appetite and regulatory alignment.
+
+How gives us the process: intake, impact assessment, approval, testing, deployment, monitoring and retirement.
+
+Who establishes accountability: the business owner, technical owner, risk functions and governance bodies.
+
+What gives us the controls: documentation, access management, bias and performance testing, explainability, human intervention and incident management.
+
+Where places those controls across the lifecycle. A system should not be assessed once and then treated as permanently approved. Its risk can change when the model, data, user population, workflow, provider or degree of autonomy changes.
+
+The purpose of the stack is to connect policy language to evidence an auditor can test.”
+
+Slide 28: Three Lines Model
+
+“The first line owns and operates the system. That means the business cannot transfer accountability to data science, IT or a vendor simply because the system is technically complex.
+
+The second line defines the standard, challenges decisions and monitors compliance.
+
+The third line provides independent assurance over whether the first two lines are doing what they claim.
+
+There is an independence issue worth making explicit. If internal audit designs or operates the governance framework, that may be valuable consulting work, but it should be described as consulting. Independent assurance over that work then needs to be preserved through an appropriate arrangement.
+
+A practical test is simple: for every material AI system, can we name the first-line owner who accepts its business risk?”
+
+Slide 29: Three regulatory regimes
+
+“This audit function operates across more than one legal environment, so a single group system can create different obligations depending on where and how it is used.
+
+The practical response is not to maintain three completely separate control systems. It is to establish a group baseline that can satisfy the strictest applicable requirements, then map local differences where necessary.
+
+For audit planning, the important questions are: where is the system deployed, who is affected, what decisions does it influence, which data does it process, and which entity is accountable?
+
+I would treat every date and legal statement on this slide as counsel-validated material. The audit takeaway is durable even as the detailed rules change: geography is part of the system’s risk classification, not a footnote added after deployment.”
+
+Slide 30: Three actions in 90 days
+
+“The first action is to establish a credible inventory across the three geographies. Before commissioning a new register, audit should determine what Zen AI and the existing technology-governance processes already record.
+
+The second is to select one material live system and test the complete framework against it. That should cover ownership, authorised purpose, data, performance, human intervention, monitoring, change history and incident response.
+
+The third is to build AI literacy into the standing development plan for auditors. This should not be a one-time awareness presentation. The team needs enough understanding to distinguish automation, predictive models, generative systems and agents, and to select the correct audit lens for each one.
+
+These are deliberately narrow actions. They create evidence and capability without waiting for a large transformation programme.”
+
+Slide 31: Close and handoff
+
+“The main message from this session is that AI assurance has to follow the system after go-live.
+
+The model can change. The underlying provider can change. The data population can change. The workflow can expand. The authority given to the system can increase without anyone describing the change as a new deployment.
+
+Today we concentrated on the governance layer: who is accountable, what the system is authorised to do, what causes escalation and whether its actions can be reconstructed.
+
+That tells us what should be controlled and tested. It does not yet prove that the underlying technical architecture enforces those controls.
+
+The next session moves into that technical layer: identity, APIs, access paths, containment, IT and OT boundaries, and the difference between authority that exists in a policy and authority that is actually enforced by the system.
+
+If today has exposed uncertainty around a specific live system, that is useful. It gives the audit function a concrete place to begin.”

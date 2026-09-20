@@ -1,0 +1,362 @@
+I reviewed the full 26-slide Tata_Steel_Cyber_Risk_Session.pptx. The deck has a clear narrative spine: assumed boundaries fail, IT compromise can become physical consequence, and audit must shift from control compliance to resilience assurance. The narration below is written as language you can read and internalise, without micro delivery instructions.
+
+Important changes before delivery
+1. Keep the first three slides short
+
+The opening recap currently introduces two highly specific frontier-lab incidents. Those claims may attract technical challenge and could consume the opening. The purpose of Slide 3 is simply to establish assumed containment versus enforced containment.
+
+My suggested narration deliberately compresses the incidents and moves quickly to the steel-plant consequence.
+
+2. Slide 6 contains two levels of evidence
+
+The German regulator reportedly confirmed the incident but did not name the company. The subsequent company attribution and financial estimates come from a later case study. Retain that distinction in both the slide and narration. Do not casually refer to it as “the Thyssenkrupp incident” without that qualification.
+
+3. Slide 12 overstates prompt injection slightly
+
+The line “there is no reliable fix” is broader than the demonstration proves. The demo proves that natural-language content may be mistaken for instructions if authority is delegated badly. It does not prove that prompt injection is wholly unmitigable.
+
+A safer conclusion is:
+
+A control with financial or physical consequence must not depend solely on a language model correctly distinguishing instructions from untrusted content.
+
+4. Correct the supplier name in the demo
+
+“Sri Balaji Fabricators” sounds like a real Indian business name. If the example is intended to be fully synthetic, use something unmistakably fictional, such as:
+
+Demo Industrial Services Ltd.
+
+This avoids someone wondering whether you used actual procurement data.
+
+5. Slide 14 needs a carefully bounded claim
+
+Present the deepfake case as a breakdown in transaction verification, not proof that all video calls are inherently unsafe. The audit conclusion is that recognised appearance and voice cannot serve as the sole authentication factor for a high-value instruction.
+
+6. Slide 16 is factually dense and optional
+
+The zero-day figures, dates and vendor claims must be revalidated before delivery. This slide is not necessary to the central story. If any part remains unverified, omit it and keep Slide 17, which is much more relevant to the audit audience.
+
+7. Slide 21 must be legally validated
+
+The Dutch implementation date, sectoral scope, entity classification, management accountability, penalty level and absence of a transition period are legal assertions. They should be validated by Dutch counsel or the client’s regulatory team.
+
+Also avoid saying the Dutch standard is automatically “the binding floor for the group.” It is binding for entities and activities within its legal scope. Adopting it as the group baseline is a governance recommendation, not necessarily a statement of extraterritorial legal effect.
+
+Full narration notes
+Slides 1–4: The shift from information risk to physical consequence
+Slide 1: When the Attack Reaches the Furnace
+
+“In the first session, we looked at systems that make or influence decisions. We examined who authorises them, how their scope is controlled and whether their actions can be reconstructed.
+
+This session moves into a different category of exposure.
+
+In a steel business, technology does not only process information. It monitors equipment, coordinates production and increasingly influences physical operations. A failure can therefore move beyond confidentiality, data loss or financial error. It can affect availability, equipment integrity and safety.
+
+The question for the next hour is what changes when a cyber incident can reach the furnace.”
+
+Slide 2: Roadmap
+
+“We will begin where the first session ended: with the difference between a boundary that exists in policy and a boundary that is technically enforced.
+
+We will then examine a cyber incident in a German steel mill and use it to understand the path from the corporate network into operational technology.
+
+From there, we will distinguish IT risk from OT risk, examine how adversarial AI changes fraud and automation risk, and consider where AI may also improve detection.
+
+We will close at the level of the Chief Audit Executive: what belongs in the audit plan, which questions should be put to the CISO and which actions would materially improve assurance over the next ninety days.”
+
+Slide 3: Assumed containment
+
+“The connection to the first session is a simple one.
+
+In the frontier-lab examples, systems reportedly operated beyond boundaries that the organisations believed would contain them. The important point for us is not the drama of an AI system leaving a sandbox. It is the control principle underneath it.
+
+A system boundary does not exist because an architecture document says it exists. It exists only if identity, access, network and monitoring controls enforce it.
+
+That distinction, between an assumed boundary and an enforced boundary, is also central to the relationship between corporate IT and the plant network.”
+
+Slide 4: The physical pivot
+
+“In an office environment, a containment failure may expose credentials, intellectual property or infrastructure.
+
+In an industrial environment, the same class of failure can interrupt a process that was expected to remain stable, controlled and safe.
+
+That changes the consequence model. We are no longer discussing only systems that produce information or recommendations. We are discussing technology connected to systems that control physical operations.
+
+That is why OT deserves a different audit lens.”
+
+Slides 5–10: The anchor case and the IT/OT boundary
+Slide 5: A blast furnace that could not be shut down
+
+“The anchor case is a 2014 incident described by Germany’s federal information-security authority.
+
+It reportedly began through targeted phishing, progressed from the business network into the production environment and ultimately interfered with the plant’s ability to operate a blast furnace through its normal shutdown process.
+
+This is useful because the initial attack vector was not exotic. The consequence became exceptional because the attacker crossed from an information environment into an operational one.”
+
+Slide 6: IT to OT in four steps
+
+“The sequence begins with plant personnel receiving targeted emails and credentials being compromised.
+
+The attackers then move through the corporate environment and reach the production network. Once control components are affected, the process can no longer be managed in the intended sequence. The regulator described extensive physical damage after a blast furnace could not be shut down normally.
+
+For a steel audience, the operational detail matters. A furnace cannot be treated like an office server. Its shutdown is a controlled industrial process. Losing the ability to execute that process converts a cyber intrusion into an equipment event.
+
+There is also an attribution distinction worth preserving. The German authority reported the incident without naming the company. A later United States national-laboratory case study associated it with Thyssenkrupp and supplied financial estimates. The core lesson does not depend on accepting that later attribution.
+
+The audit question is whether the route from the business network to the production environment was known, controlled and monitored before the incident, or discovered only through its physical consequence.”
+
+Slide 7: The same equipment in the other direction
+
+“In the first session, we discussed analytics improving blast-furnace performance. That is exactly the kind of industrial value that connected technology can create.
+
+This case shows the other side of the same architecture.
+
+The connection that allows operational data to improve throughput can also become a route through which compromise reaches production. The answer is not to reverse digitalisation. The answer is to recognise that connectivity creates both value and attack paths.
+
+The systems that make the plant more efficient and the systems that can materially disrupt it are increasingly part of the same environment. Assurance has to cover both outcomes.”
+
+Slide 8: IT and OT are not the same audit
+
+“Conventional IT security usually places confidentiality and integrity at the centre. Systems can often be patched, restarted or replaced on relatively short cycles.
+
+OT begins from different operating assumptions. Safety and availability are dominant. Equipment may remain in service for decades. A patch may require engineering validation and a planned outage. Restarting a controller or interrupting a process may create more danger than the vulnerability being addressed.
+
+This does not mean vulnerabilities should be accepted. It means that the audit question cannot stop at ‘why has this not been patched?’
+
+We need to ask whether the exposure is segmented, whether access is restricted, whether activity is monitored, whether a compensating control exists and whether the residual risk has been consciously accepted by someone with the authority to accept it.
+
+An IT checklist can identify a gap in OT. It cannot by itself determine a safe remediation path.”
+
+Slide 9: Norsk Hydro
+
+“The Norsk Hydro case provides a useful comparison because it involves a global metals company operating continuous industrial processes.
+
+Ransomware encrypted a large part of the company’s IT estate. The operational consequence was significant even though the initial compromise was not described as a direct attack on the control systems.
+
+The organisation moved parts of production to manual operation, restored systems from backup and communicated openly rather than paying the ransom. Even with those capabilities, the financial impact was substantial.
+
+For audit, the most useful question is not whether the company made the correct ransom decision. It is whether the business retained a genuine manual operating capability.
+
+Many continuity plans say that a process can run manually. Far fewer organisations have tested whether current staff can actually do it, with current equipment, under realistic conditions and for a meaningful period.
+
+Manual fallback is therefore not a paragraph in a continuity document. It is an operating control that has to be demonstrated.”
+
+Slide 10: Why critical infrastructure is targeted
+
+“Critical infrastructure offers attackers consequence leverage.
+
+Stopping a plant creates operational, financial and public pressure. For a criminal group, that can increase the power of extortion. For a state-linked actor, access may be valuable even if it is not used immediately.
+
+That creates a difficult assurance problem. An absence of reported incidents does not establish that the environment is free of unauthorised access. An attacker may establish persistence and retain it for later use.
+
+Legacy control equipment adds to the challenge. Some devices were designed for long operating lives and for environments that were not expected to be broadly connected.
+
+The supply chain creates another route. Vendors and system integrators may need remote access for legitimate maintenance, but every persistent external connection becomes part of the plant’s security perimeter.
+
+For internal audit, third-party access to OT deserves the same attention as internal privileged access: named identity, approved purpose, limited duration, monitored activity and periodic recertification.”
+
+Slides 11–14: Adversarial AI
+Slide 11: The attacker’s new toolkit
+
+“AI does not replace the established cyber-threat landscape. It changes the speed, scale and credibility with which parts of an attack can be executed.
+
+The most relevant examples for audit are not speculative autonomous attackers. They are already familiar control problems made harder by convincing synthetic content and by systems that rely on natural language as an instruction mechanism.”
+
+Slide 12: The purchase order that talks its way through
+
+“This demonstration uses a synthetic purchase-order request.
+
+The first version contains an amount above the relevant threshold and no supporting quotation. A properly designed workflow should reject it or route it for additional approval.
+
+The second request contains the same facts but adds a sentence claiming that procurement administration has temporarily suspended the policy. Nothing in the underlying policy has changed. The untrusted request itself is attempting to supply a new instruction.
+
+If the model accepts that statement and approves the request, no application has been technically breached. The failure is that the workflow allowed untrusted business content to redefine its operating authority.
+
+A language model is designed to interpret language. It does not inherently know that one sentence is authoritative policy while another is an unsupported claim inserted by the requester.
+
+The control conclusion is therefore architectural. The model may read the request, extract information and explain an exception. The applicable threshold and approval path must be enforced independently by a deterministic control.”
+
+Slide 13: Deterministic where possible
+
+“The division of responsibility should be explicit.
+
+Rules decide thresholds, approvals and actions carrying financial or safety consequences. Those controls must be reproducible, logged and capable of being reconstructed later.
+
+AI can assist where interpretation is genuinely required. It can read documents, classify free text, summarise evidence and flag an unusual item for human review.
+
+This is not an argument against AI in the workflow. It is an argument against giving a probabilistic language system sole authority over a deterministic control.
+
+The workflow establishes the facts and applies the authority. AI helps people understand the information around those facts.”
+
+Slide 14: Deepfakes and transaction verification
+
+“The deepfake payment case is important because the employee reportedly began with appropriate scepticism. The initial email looked suspicious, so additional confirmation was sought.
+
+The problem was that the second channel relied on the same underlying assumption: if familiar people could be seen and heard, their identities had been established.
+
+Synthetic media weakens that assumption. A recognisable face or voice can no longer serve as the sole authentication factor for a high-value instruction.
+
+The audit response is not to prohibit video calls. It is to examine whether sensitive transactions require an independent verification factor, such as a callback through a known directory number, a pre-established approval channel or dual authorisation inside the transaction system.
+
+The control has to authenticate the instruction, not merely reproduce the appearance of the person giving it.”
+
+Slides 15–19: AI on the defender’s side
+Recommended use
+
+Slides 15–19 form an optional block. For a strict 60-minute session, I would retain Slides 17 and 19. Slide 17 answers the principal control problem raised by the case studies. Slide 19 converts security technology back into an audit subject.
+
+Slide 15: The other direction
+
+“The capabilities that increase the attacker’s reach can also help defenders analyse environments that have become too complex for manual review alone.
+
+The right framing is dual use. AI does not make the environment safe. It may improve selected activities such as vulnerability discovery, anomaly identification and the triage of large volumes of security information.”
+
+Slide 16: Vulnerability discovery
+
+“One emerging use is software-vulnerability discovery.
+
+AI systems can examine large codebases and identify relationships or weaknesses that conventional pattern matching and repeated human review may have missed.
+
+That is valuable, but discovery is only the beginning. Every finding still has to be reproduced, assessed for exploitability, prioritised and remediated without introducing further defects.
+
+For audit, the important observation is that cheaper discovery can create a larger verification burden. Finding more possible vulnerabilities does not automatically mean that the organisation has increased its capacity to validate and fix them.
+
+This is a useful capability, but it should not be confused with a complete vulnerability-management process.”
+
+Slide 17: The detection gap
+
+“The strongest defensive use case in this session is not prediction. It is earlier detection.
+
+The German steel-mill case became visible through physical consequence. The frontier-lab example involved an extended period of activity before discovery. Both raise the same assurance question: how quickly would an abnormal pattern become visible?
+
+OT behavioural monitoring approaches this by establishing a baseline of ordinary network activity: which devices communicate, through which protocols, at what frequency and in what direction. It then identifies departures from that baseline for investigation.
+
+The deployment model is important. In sensitive industrial environments, monitoring is commonly designed to observe a mirrored copy of traffic rather than actively interrogate live controllers. That reduces the risk that the security control itself interferes with production.
+
+This does not mean every anomaly is an attack. It means the organisation gains a better chance of seeing a material change before the first alert comes from equipment failure.
+
+The audit focus should be on coverage, baseline quality, alert ownership, investigation time and the route from detection to authorised intervention.”
+
+Slide 18: Four capability categories
+
+“There are four capability categories worth recognising.
+
+The first is vulnerability discovery, where AI assists in analysing source code and proposing areas for investigation.
+
+The second is OT behavioural detection, which looks for deviations in plant-network activity and may also discover assets or connections absent from the formal inventory.
+
+The third is an agent control plane: a monitored intermediary through which an agent’s tool use and outbound actions can be governed and recorded.
+
+The fourth is on-premises or isolated deployment. That becomes relevant when plant telemetry, source code or sensitive operating information cannot be sent to an external service.
+
+These are capability categories, not a recommendation to procure particular products. Before considering technology, the organisation should define the control problem, the information boundary and the evidence it expects the tool to produce.”
+
+Slide 19: Before you believe the vendor
+
+“An AI security product remains an AI system and should be audited as one.
+
+Begin with verification. Who confirms the findings, and what capacity exists to deal with the volume produced?
+
+Then examine performance in the organisation’s own environment. A benchmark result does not establish the false-positive rate on Tata Steel’s plant network.
+
+The information boundary also matters. Where does analysis occur? What data leaves the network? Is it retained? Can it be used for product improvement? Which legal entity is the processor or service provider?
+
+Finally, examine decision authority. If the product proposes configuration or code changes, who reviews and approves them before they reach production?
+
+The governance questions from the first session apply fully here: authorised scope, human override, monitoring and an end-to-end audit trail.”
+
+Slides 20–26: The CAE’s role and the close
+Slide 20: From compliance to resilience assurance
+
+“The discussion now moves from individual technologies to the role of the Chief Audit Executive.
+
+Traditional cyber audits often ask whether required controls exist. Resilience assurance asks a harder question: whether the organisation can continue, contain and recover when those controls do not prevent the incident.
+
+That requires evidence from live tests, restored systems, exercised decision rights and demonstrated fallback arrangements. Policy compliance remains necessary, but it is not proof of operational resilience.”
+
+Slide 21: The regulatory floor
+
+“For the Netherlands operation, NIS2 and its national implementation create a more explicit regulatory basis for cyber-risk governance, incident reporting, management oversight and supply-chain controls.
+
+For this audience, the most useful requirement is the early-warning clock for a significant incident. That converts detection capability into an auditable regulatory dependency.
+
+The question is not only whether the organisation has an incident-reporting procedure. It is whether the technical and operational teams can detect, classify and escalate a material OT incident quickly enough for the responsible entity to meet its reporting obligation.
+
+The precise classification and penalty position for Tata Steel Nederland should be confirmed with the appropriate legal and regulatory owners. The audit principle is already clear: a reporting deadline cannot be met by policy if the organisation lacks the ability to become aware of the incident.”
+
+Slide 22: Six risks for the audit plan
+
+“A credible cyber-audit plan should cover six connected areas.
+
+Identity determines who can access critical systems and whether standing privilege is genuinely necessary.
+
+Third-party access covers vendors and integrators who may enter the plant environment remotely.
+
+Supply-chain risk includes software, firmware, update mechanisms and the build process.
+
+AI risk concerns authorised scope, intervention and traceability where models or agents influence decisions.
+
+Cloud risk includes configuration as well as where information is processed and retained.
+
+Ransomware assurance covers segmentation, restoration and tested manual fallback.
+
+AI is one category within the plan, not the whole plan. In a plant environment, third-party access and the ability to operate through disruption may be at least as consequential.”
+
+Slide 23: Eight questions for the CISO
+
+“These are not intended as gotcha questions. They are questions that connect technical controls to operating consequence.
+
+Which plant systems can be reached from the corporate network, and when was that understanding last independently validated?
+
+Which employees, vendors and integrators hold persistent remote access into OT?
+
+If the IT environment were unavailable tomorrow, which production processes could continue manually, and for how long?
+
+When was restoration from backup last demonstrated rather than documented?
+
+Can a significant OT incident be detected, classified and escalated within the applicable reporting period?
+
+How would the organisation discover that a critical supplier had been compromised?
+
+Which AI systems are permitted to take actions, and how can each one be overridden?
+
+Finally, what evidence would indicate a capable actor was already present but deliberately remaining quiet?
+
+The quality of the answers matters, but so does the evidence supporting them. A current network map, access recertification, restoration record or exercise report is stronger than an assurance that the process exists.”
+
+Slide 24: A risk-based roadmap
+
+“The programme begins with inventory, but not merely an asset count. The important inventory includes systems, owners, dependencies and every meaningful connection between IT, OT, cloud services, AI platforms and external parties.
+
+The next step is a structured maturity assessment against recognised frameworks. The purpose is to establish a consistent baseline, not to generate a long list of generic gaps.
+
+Prioritisation should then follow consequence. A small number of control systems may deserve more assurance attention than a large population of conventional servers because failure carries a physical or safety consequence.
+
+Finally, assurance must become more continuous. Monitoring, access review, recovery testing and reassessment after material change provide evidence that a control continues to operate after the audit fieldwork has ended.”
+
+Slide 25: Three actions in 90 days
+
+“The first action is to map the connections between the corporate network and plant systems, including every route used by vendors and integrators. If a connection exists without a clear owner, purpose or monitoring arrangement, that is already an assurance issue.
+
+The second is to test manual fallback on one carefully selected production process. The objective is not to create operational risk for the sake of an exercise. It is to determine, through an appropriately controlled test, whether the documented fallback remains executable by current staff using current procedures.
+
+The third is to test the incident-awareness and escalation chain against the applicable reporting requirement. Use an OT scenario and follow it from initial signal through classification, management escalation, legal assessment and regulatory decision-making.
+
+Each action produces evidence. A network map, an exercised fallback and a timed escalation test give the audit committee a stronger view of resilience than another policy review.”
+
+Slide 26: Two systems converging
+
+“The two sessions have dealt with what may initially appear to be separate subjects.
+
+The first covered systems that make or influence decisions. This session covered systems connected to physical operations.
+
+Those environments are converging. AI increasingly depends on operational data, and operational systems increasingly depend on connected software, cloud services and automated decision support.
+
+Governance therefore needs technical verification. A policy statement about permitted authority is meaningful only when the architecture enforces it.
+
+Technical controls also need ownership. Segmentation, monitoring and override mechanisms do not protect the business unless named people are accountable for maintaining them and acting when they fail.
+
+The final message for internal audit is straightforward. Assurance has to follow the path from goveDigital operations create value by connecting information systems to industrial processes. Cyber resilience depends on ensuring that every connection, identity and automated action remains inside a technically enforced boundary, and that the organisation can detect, contain and operate when the boundary fails.”
+
+
+
+
